@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Seleccionar mascota -->
+    <section id="seleccionar-mascota">
+        
+        <!-- Título -->
+        <h1 class="titulo">Mokepon</h1>
+        
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+           
+        </div>
+
+        <!-- Botón para seleccionar mascota -->
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <!-- Seleccionar ataque -->
+    <section id="seleccionar-ataque">
+        <!-- Título -->
+        <h1 class="titulo">Mokepon</h1>
+
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+
+         <!-- Botones para seleccionar los ataques -->
+         <div> <!-- clase 42 - 6:53 -->
+            <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">Agua ♒</button>
+            <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+        </div>
+        
+        <div>
+            <!-- Mensajes -->
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte</p>
+
+                <!-- Reincio del juego -->
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+
+            </div>
+            
+        </div>
+
+        <div class="ataques">
+            <div>
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador">Ratigueya</p>
+                <div id="ataque-del-jugador"></div>
+            </div>
+            <div>
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataque-del-enemigo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/mokepon.js"></script>
+</body>
+</html>

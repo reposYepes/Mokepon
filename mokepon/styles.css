@@ -1,0 +1,152 @@
+/* Selectores */
+/* Se trabaja basicamente con 3.
+
+1. El de tipo que es directamente con la etiqueta HTML.
+
+2. Este se trabaja con un atributo llamado clase y se define con un punto(.) antes
+del nombre de la clase.
+
+3. Este se trbaja con un atributo llamado id que se define con un numeral(#) antes
+del nombre del id.*/
+
+/* Propiedades */
+/* son las caracteristicas que se le pueden dar a los elementos de HTML como por
+ejemplo el color, altura, ancho, etc.. */
+
+/* Valores */
+/* Corresponden a cada una de las propiedades o caracteristicas que se estan 
+asignando por ejemplo si la pripiedad es un color, el valor es el rojo */
+
+/* 
+label {
+    background-color: tomato;
+    width: 322px;
+    height: 50px;
+}
+
+input {
+    background-color: aqua;
+    width: 322px;
+    height: 50px;
+}
+
+button {
+    background-color: blueviolet;
+    width: 322px;
+    height: 50px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Russo+One&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #952323;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #A73121;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+}
+
+
+input {
+    display: none;
+}
+
+/* pseudo-clases */
+input:checked + label{
+    /* width: 100px; */
+    background-color: #D24545;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #A73121;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#mensajes {
+    width: 280;
+    background: #F2E8C6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #A73121;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+}
